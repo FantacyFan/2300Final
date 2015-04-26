@@ -20,17 +20,27 @@
 </head>
 
 <body>
-    <div id="navigation">
+    <div id="nav-wrapper">
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="catalogue.php">Catalogue</a></li>
             <li><a href="profile.php">Profile</a></li>
             <li><a href="cart.php">Cart</a></li>
-            <li></li>
         </ul>
+        <div id="login-wrapper">
+            <form id="login-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" name="login" value="Log In">
+            </form>
+        </div>
     </div>
     <div id="content-wrapper">
         <div id="image">
+            <div id="homepage-text-wrapper">
+                <h1>Welcome to SoleScription</h1>
+                <p>Together we can give others a leg up.</p>
+            </div>
         </div>
     </div>
 </body>

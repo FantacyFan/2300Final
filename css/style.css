@@ -14,34 +14,87 @@ a {
 	padding: 0;
 }
 
+h1 {
+	font-size: 36pt;
+	font-weight: 200;
+	text-align: center;
+}
+
 body {
 	margin: 0px;
 }
 
-#navigation {
-	margin: 0px;
-	min-width: 1000px;
-	height: 80px;
-	background: linear-gradient(#383838, #1C1C1C); 
-	color: white;
-	box-shadow: 0px 10px 40px #9C9C9C;
-}
+/* navigation styling */
+	#nav-wrapper {
+		margin: 0px;
+		min-width: 1000px;
+		height: 80px;
+		background: linear-gradient(#383838, #1C1C1C); 
+		color: white;
+		box-shadow: 0px 10px 40px #9C9C9C;
+	}
 
-ul {
-	display: table-cell;
-	margin: 0px;
-	padding: 0px;
-}
+	#nav-wrapper ul {
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
 
-ul li {
-	border-right: 1px solid rgba(255,255,255,0.1);
-	list-style-type: none;
-	min-width: 200px;
-	height: 80px;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
+	#nav-wrapper ul li {
+		border-right: 1px solid rgba(255,255,255,0.1);
+		list-style-type: none;
+		min-width: 200px;
+		height: 80px;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-weight: 200;
+	}
+
+	#nav-wrapper ul li:hover {
+		border-right: 1px solid rgba(255,255,255,0.1);
+		list-style-type: none;
+		min-width: 200px;
+		height: 80px;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		font-weight: 400;
+		background: linear-gradient(#383838, rgba(255,255,255,0.1)); 
+	}
+
+	#login-wrapper {
+		display: inline-block;
+		float: right;
+		width: 500px;
+		vertical-align: top;
+	}
+
+	#login-form {
+		height: 80px;
+		padding-top: 15px;
+	}
+
+	#login-form input[type="text"]{
+		height: 40px;
+		width: 180px;
+		border: 1px solid #aaa;
+	    border-radius: 5px;
+	    background-color: #E5E5E5;
+	    margin: 5px;
+		padding: 5px;
+	}
+
+	#login-form input[type="submit"]{
+		height: 40px;
+		width: 90px;
+		border: 1px solid #aaa;
+	    border-radius: 5px;
+		margin: 5px;
+		padding: 5px;
+	}
+
+
 
 #content-wrapper {
 	margin: 0px;
@@ -51,7 +104,22 @@ ul li {
 
 #image {
 	height: 1000px;
-	background-image: url("../assets/bg.jpg");
-	background-size: 100% 100%;
+	position: relative;
+	background-image: url("../assets/bg-mod.jpg");
+	background-size: 1600px 1000px;
+}
 
+#homepage-text-wrapper {
+	width: 50%;
+	height: 400px;
+	position: absolute;
+	margin-top: 200px;
+	margin-left: calc(50%/2);
+	color: white;
+}
+
+#homepage-text-wrapper p {
+	font-weight: 200;
+	font-size: 24pt;
+	text-align: center;
 }
