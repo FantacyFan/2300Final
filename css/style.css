@@ -123,3 +123,68 @@ body {
 	font-size: 24pt;
 	text-align: center;
 }
+
+
+/*Catalogue page*/
+
+#rental-purchase{
+	height: 40px;
+	min-width: 120px;
+	padding:12px;
+	margin-top:30px;
+	margin-left: 350px;
+	line-height:1;
+	background-color:#fff;
+	color:#000000;
+	font-size:15px;
+	outline:none
+}
+
+#filter{
+	padding-bottom: 90px;
+}
+
+#filter-form{
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+#filter-ul li{
+	display: table-cell;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	border: 1px solid black;
+}
+
+#filter-size, #filter-style, #filter-color, #filter-type{
+	text-decoration: none;
+	list-style: none;
+}
+
+#filter-size li, #filter-style li, #filter-color li, #filter-type li{
+	display: inline-block;
+	border: 1px solid black;
+	text-align: center;
+	padding-left: 20px; 
+	padding-right: 20px;
+}
+
+#gallery{
+	margin-top: 60px;
+}
+
+#item1, #item2, #item3, #item4, #item5, #item6{
+	width: 300px;
+	height: 250px;
+	border:1px solid black;
+	display: inline-block;
+	margin-left: 80px;
+	margin-bottom: 20px;
+}
+
+
+/*End of Catalogue page*/
