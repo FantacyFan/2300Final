@@ -34,7 +34,7 @@
 
 
         <!-- Thumbnail to show the item in different angles -->
-       <section class="demo">
+       <div id="thumbnail">
           <button class="next">Next</button>
           <button class="prev">Previous</button>
           <div class="container">
@@ -60,15 +60,30 @@
               <img src="http://placeimg.com/400/200/tech"/>
             </div>
           </div>
-        </section>
-
-        <!-- the detailed description of item -->
-        <div id="cart-description">
-
         </div>
 
+        <!-- the detailed description of item -->
+        <div id="item-description">
+          <h3>Description</h3>
+          <p>
+            Here is the description, Here is the description, Here is the description, Here is the description
+            Here is the description, Here is the description, Here is the description, Here is the description
+            Here is the description, Here is the description, Here is the description, Here is the description
+            Here is the description, Here is the description, Here is the description, Here is the description
+          </p>
+        </div>
+
+        <div id="buttons">
+          <button>Add to Cart</button>
+          <button>Add to Wishlist</button>
+        </div>
         <!-- other related items' img -->
         <div id="related-img">
+          <h3>Here should be a thumbnail slider</h3>
+          <img id="item1" src="" alt="placeholder1"/>
+          <img id="item2" src="" alt="placeholder2"/>
+          <img id="item3" src="" alt="placeholder3"/>
+          <img id="item4" src="" alt="placeholder4"/>
         </div>
 
 

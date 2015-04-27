@@ -265,9 +265,9 @@ img.number {
 }
 /*End of Catalogue page*/
 
-/*Cart page*/
-.demo{
-	margin-top: 150px;
+/*ItemDetail page*/
+#thumbnail{
+	margin-top: 200px;
 	position: absolute;
 }
 
@@ -303,4 +303,23 @@ img.number {
   margin-left: 50px;
 }
 
-/*End of Cart*/
+#item-description{
+	margin-top: 200px;
+	position: absolute;
+	margin-left: 550px;
+	width: 300px;
+}
+
+#buttons{
+	margin-top: 300px;
+	position: absolute;
+	margin-left: 900px;
+}
+
+#item1, #item2, #item3, #item4{
+	width: 200px;
+	height: 180px;
+	margin-top: 500px;
+}
+
+/*End of ItemDetail*/
