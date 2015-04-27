@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-    <title>Catalogue</title>
+    <title>Detail</title>
 </head>
 <body>  
     <div id="nav-wrapper">
@@ -80,10 +80,10 @@
         <!-- other related items' img -->
         <div id="related-img">
           <h3>Here should be a thumbnail slider</h3>
-          <img id="item1" src="" alt="placeholder1"/>
-          <img id="item2" src="" alt="placeholder2"/>
-          <img id="item3" src="" alt="placeholder3"/>
-          <img id="item4" src="" alt="placeholder4"/>
+          <img id="img1" src="" alt="placeholder1"/>
+          <img id="img2" src="" alt="placeholder2"/>
+          <img id="img3" src="" alt="placeholder3"/>
+          <img id="img4" src="" alt="placeholder4"/>
         </div>
 
 
