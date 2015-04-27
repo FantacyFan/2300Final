@@ -26,12 +26,15 @@ body {
 
 /* navigation styling */
 	#nav-wrapper {
+		position: fixed;
 		margin: 0px;
+		width: 100%;
 		min-width: 1000px;
 		height: 80px;
 		background: linear-gradient(#383838, #1C1C1C); 
 		color: white;
-		box-shadow: 0px 10px 40px #9C9C9C;
+		box-shadow: 0px 10px 40px rgba(0,0,0,0.8);
+		z-index: 99;
 	}
 
 	#nav-wrapper ul {
@@ -41,7 +44,6 @@ body {
 	}
 
 	#nav-wrapper ul li {
-		border-right: 1px solid rgba(255,255,255,0.1);
 		list-style-type: none;
 		min-width: 200px;
 		height: 80px;
@@ -52,7 +54,6 @@ body {
 	}
 
 	#nav-wrapper ul li:hover {
-		border-right: 1px solid rgba(255,255,255,0.1);
 		list-style-type: none;
 		min-width: 200px;
 		height: 80px;
@@ -60,13 +61,14 @@ body {
 		text-align: center;
 		vertical-align: middle;
 		font-weight: 400;
-		background: linear-gradient(#383838, rgba(255,255,255,0.1)); 
+		font-size: 14pt;
+		background: linear-gradient(#383838, rgba(255,255,255,0.05));
 	}
 
 	#login-wrapper {
 		display: inline-block;
 		float: right;
-		width: 500px;
+		width: 480px;
 		vertical-align: top;
 	}
 
@@ -87,22 +89,20 @@ body {
 
 	#login-form input[type="submit"]{
 		height: 40px;
-		width: 90px;
+		width: 80px;
 		border: 1px solid #aaa;
 	    border-radius: 5px;
 		margin: 5px;
 		padding: 5px;
 	}
 
-
-
 #content-wrapper {
 	margin: 0px;
 	height: 2000px;
-	background-color: red;
+	background-color: #E5E5E5;
 }
 
-#image {
+#homepage-image {
 	height: 1000px;
 	position: relative;
 	background-image: url("../assets/bg-mod.jpg");
@@ -113,7 +113,7 @@ body {
 	width: 50%;
 	height: 400px;
 	position: absolute;
-	margin-top: 200px;
+	margin-top: 300px;
 	margin-left: calc(50%/2);
 	color: white;
 }

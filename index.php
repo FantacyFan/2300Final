@@ -36,11 +36,12 @@
         </div>
     </div>
     <div id="content-wrapper">
-        <div id="image">
+        <div id="homepage-image">
             <div id="homepage-text-wrapper">
                 <h1>Welcome to SoleScription</h1>
                 <p>Together we can give others a leg up.</p>
             </div>
+            <div>
         </div>
     </div>
 </body>
