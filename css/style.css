@@ -263,6 +263,44 @@ img.number {
 	margin-left: 80px;
 	margin-bottom: 20px;
 }
-
-
 /*End of Catalogue page*/
+
+/*Cart page*/
+.demo{
+	margin-top: 150px;
+	position: absolute;
+}
+
+.container {
+  max-width: 400px;
+  background-color: black;
+  margin: 0 100px;
+  text-align: center;
+  position: relative;
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/*button {
+  position: absolute;
+}*/
+
+.next {
+  right: 5px;
+  margin-left: 150px;
+}
+
+.prev {
+  left: 5px;
+  margin-left: 50px;
+}
+
+/*End of Cart*/

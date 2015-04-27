@@ -1,0 +1,116 @@
+<html>
+<head>
+    <!-- character encoding of my website -->
+    <meta charset="UTF-8" />       
+    <!-- icon on the topleft of your browser tab -->
+    <link rel="icon" href="assets/icon.png" />      
+    <!-- external CSS file -->    
+    <link type='text/css' rel="stylesheet" href="css/style.css" />    
+    <!-- google fonts external CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,200' rel='
+    stylesheet' type='text/css'>
+    <!-- external jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    <title>Catalogue</title>
+</head>
+<body>  
+    <div id="nav-wrapper">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="catalogue.php">Catalogue</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="cart.php">Cart</a></li>
+        </ul>
+        <div id="login-wrapper">
+            <form id="login-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" name="login" value="Log In">
+            </form>
+        </div>
+    </div>
+
+
+        <!-- Thumbnail to show the item in different angles -->
+       <section class="demo">
+          <button class="next">Next</button>
+          <button class="prev">Previous</button>
+          <div class="container">
+            <div style="display: inline-block;">
+              <img src="http://placeimg.com/400/200/people"/>
+            </div>
+            <div>
+             <img src="http://placeimg.com/400/200/any"/>
+            </div>
+            <div>
+              <img src="http://placeimg.com/400/200/nature"/>
+            </div>
+            <div>
+              <img src="http://placeimg.com/400/200/architecture"/>
+            </div>
+            <div>
+              <img src="http://placeimg.com/400/200/animals"/>
+            </div>
+            <div>
+              <img src="http://placeimg.com/400/200/people"/>
+            </div>
+            <div>
+              <img src="http://placeimg.com/400/200/tech"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- the detailed description of item -->
+        <div id="cart-description">
+
+        </div>
+
+        <!-- other related items' img -->
+        <div id="related-img">
+        </div>
+
+
+
+    <script>
+    $(document).ready(function() {
+        var currentIndex = 0,
+          items = $('.container div'),
+          itemAmt = items.length;
+
+        function cycleItems() {
+          var item = $('.container div').eq(currentIndex);
+          items.hide();
+          item.css('display','inline-block');
+        }
+
+        var autoSlide = setInterval(function() {
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        }, 3000);
+
+        $('.next').click(function() {
+          clearInterval(autoSlide);
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        });
+
+        $('.prev').click(function() {
+          clearInterval(autoSlide);
+          currentIndex -= 1;
+          if (currentIndex < 0) {
+            currentIndex = itemAmt - 1;
+          }
+          cycleItems();
+        });
+    });
+    </script>
+</body>
+</html>
