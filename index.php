@@ -38,10 +38,33 @@
     <div id="content-wrapper">
         <div id="homepage-image">
             <div id="homepage-text-wrapper">
-                <h1>Welcome to SoleScription</h1>
+                <h1>SoleScription</h1>
+                <hr>
                 <p>Together we can give others a leg up.</p>
+                <p id="button">Find out more</p>
             </div>
-            <div>
+        </div>
+        <div id="howitworks-wrapper">
+            <h1>Here's how it works</h1>
+            <hr class="dark">
+            <ul id="howitworks-list">
+                <li>
+                    <img class="number" src="assets/num1.png" alt=""><br>
+                    Sign up and become a monthly subscriber
+                </li>
+                <li>
+                    <img class="number" src="assets/num2.png" alt=""><br>
+                    Receive one pair of your favorite shoes at your doorstep
+                </li>
+                <li>
+                    <img class="number" src="assets/num3.png" alt=""><br>
+                    Return them when you are done and receive the next pair ...
+                    <br><br>
+                    ... or just buy them at a discounted Members only price!
+                </li>
+            </ol>
+        </div>
+        <div id="homepage-bottom-image">
         </div>
     </div>
 </body>
